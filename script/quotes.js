@@ -24,6 +24,6 @@ const quotesList = [
 quotes = document.querySelector("#quotes span:first-child");
 author = document.querySelector("#quotes span:last-child");
 
-const chooseQuotes = quotesList[Math.floor(Math.random() * 10)];
+const chooseQuotes = quotesList[Math.floor(Math.random() * quotesList.length)];
 quotes.innerText = chooseQuotes.quotes;
 author.innerText = chooseQuotes.author;
