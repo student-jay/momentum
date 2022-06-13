@@ -10,11 +10,29 @@ function handleInputForm(event){
     taskList.push(task);
     
     // Save to localstorage
-    const taskToArrayString = JSON.stringify(taskList);
-    localStorage.setItem("task", taskToArrayString);
+    saveTaskListToStorage();
     paintTask(task);
     todoInput.value = "";
 
+    
+}
+
+function saveTaskListToStorage(){
+    localStorage.setItem("task", JSON.stringify(taskList));
+}
+
+function handleDeleteBtn(event){
+
+    pNode = event.target.parentElement;
+    pNode.remove();
+    
+    // Caution :: pNode Type is Stirng. So, if we remove the task, we have to change pNode Type
+    taskList = taskList.filter(task => task.id !== parseInt(pNode.id));
+
+    // Save to localstorage
+    saveTaskListToStorage();
+    
+    
     
 }
 
@@ -28,9 +46,9 @@ function paintTask(task){
     button = document.createElement("button");
     button.innerText = "x";
     li.appendChild(button);
-    console.dir(button);
     ul.appendChild(li);
 
+    button.addEventListener("click", handleDeleteBtn);
 }
 
 
@@ -43,8 +61,6 @@ todoForm.addEventListener("submit", handleInputForm);
 if (localStorage.getItem("task") !== null){
     const taskListFromStorage = JSON.parse(localStorage.getItem("task"));
     taskListFromStorage.forEach(element => taskList.push(element));
-    console.log(taskListFromStorage);
-
     taskListFromStorage.forEach(element => paintTask(element));
 
 }
