@@ -1,4 +1,6 @@
 @import "reset.css";
+@import "layout_a.css";
+
 
 body{
     background-color: wheat;
@@ -14,15 +16,29 @@ body{
 }
 
 .main-header{
-    margin-right: 40px;
-    background-color: cyan;
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    
+    background-color: rgba(0, 0, 0, 0.7);
 
     width:100%;
-    height:30px;
+    height:50px;
 
     position:fixed;
     top:0px;
+    padding-right: 20px;
+    color:white;
 
+}
+
+/* Setting(Gear button) animation */
+.main-header i{
+    transition:transform 3.0s ease-in-out;
+}
+.main-header i:hover{
+    transform:rotate(360deg);
 }
 
 .main-body{
@@ -36,14 +52,6 @@ body{
     flex-direction: row-reverse;
 }
 
-.main-body--layoutone{
-    display:flex;
-    flex-direction: column;
-
-    width:50%;
-    height:100%;
-    background-color: yellow;
-}
 
 .main-body--layouttwo{
     display:flex;
