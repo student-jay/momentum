@@ -56,7 +56,10 @@
     padding: 30px 10px 10px 10px;
     color:white
 }
-
+.greeting-font--decoration{
+    border-bottom: 1px solid white;
+    width:500px;
+}
 .quatos-text-font{
     font-weight: 700;
     font-size:32px;
@@ -71,4 +74,16 @@
 
     padding: 0px 10px 10px 10px;
     color:white
+}
+
+#userName{
+    border:none;
+    border-bottom: 1px solid white;
+    width:500px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#userName::placeholder{
+    font-size:25px;
+    color:rgba(0, 0, 0, 0.5);
 }
