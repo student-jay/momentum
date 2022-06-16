@@ -1,12 +1,11 @@
 .main-body--layoutone{
     display:flex;
     flex-direction: column;
-
+    justify-content: flex-end;
     width:70%;
     height:100%;
-    background-color: yellow;
-
-    padding:100px 0 0 0;
+    
+    padding:100px 0 100px 0;
 }
 
 .shortcut-template{
