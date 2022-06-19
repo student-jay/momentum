@@ -1,0 +1,79 @@
+
+.main-right{
+    width:40%;
+    height:100%;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    
+    background-color:rgba(0, 255, 255, 0.3);
+    
+}
+
+.main-right--days{
+    width:100%;
+    font-size:12px;
+    margin-bottom:50px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+}
+
+.greeting{
+    width:100%;
+    height:auto;
+
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.greeting-text{
+    font-weight: 900;
+    font-size:36px;
+    margin:20px;
+    
+    color:rgba(255, 255, 255, 1);
+}
+
+.greeting-name{
+    font-weight: 700;
+    font-size:85px;
+    margin:0 20px;
+
+    color:rgba(255, 255, 255, 1);
+}
+
+.quotes-text{
+    font-weight: 500;
+    font-size:15px;
+    line-height: 150%;
+    margin:20px;
+    
+    color:rgba(255, 255, 255, 1);
+}
+
+.quotes-author{
+    font-weight: 500;
+    font-size:15px;
+    line-height: 150%;
+    margin:0 0px 50px 20px;
+    
+    color:rgba(255, 255, 255, 1);
+}
+
+.information{
+    font-weight:900;
+    color:rgba(0, 0, 0, 1);
+}
+
+.weather{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    
+
+}
