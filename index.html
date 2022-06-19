@@ -8,30 +8,51 @@
     <title>Mometum</title>
   </head>
   <body>
-    <form class="hidden" id="loginform">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name ?"
-      />
-      <input type="submit" value="Login" />
-    </form>
+    <div class="mainframe">
+      <form class="hidden" id="loginform">
+        <input
+          class="login-input"
+          required
+          maxlength="15"
+          type="text"
+          placeholder="Let me know your name & Press Enter"
+        />
+      </form>
 
-    <h1></h1>
-    <h2 id="date">07, June, 2022</h2>
-    <h2 id="clock">00:00:00</h2>
+      <div class="main-left">
+        <div class="todoform">
+          <form id="todo-form">
+            <input class="todo-input" type="text" placeholder="Today Task" />
+          </form>
+        </div>
 
-    <div id="quotes">
-      <span></span>
-      <span></span>
+        <div class="todo-list">
+          <ul id="todoList"></ul>
+        </div>
+      </div>
+
+      <div class="main-right">
+        <div class="main-right--days">
+          <h2 class="information padding-5" id="date">07, June, 2022</h2>
+          <h2 class="information padding-5" id="city">도시</h2>
+          <div class="weather">
+            <h2 class="information padding-5" id="weatherData">날씨</h2>
+          </div>
+          <h2 class="information padding-5" id="humidity">습도</h2>
+          <h2 class="information padding-5" id="temperature">기온</h2>
+          <h2 class="information padding-5" id="clock">00:00:00</h2>
+        </div>
+
+        <div class="greeting">
+          <h1 class="greeting-text">Have a good day</h1>
+          <h1 class="greeting-name" id="username"></h1>
+          <div id="quotes">
+            <p class="quotes-text"></p>
+            <p class="quotes-author"></p>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <form id="todo-form">
-      <input type="text" placeholder="Today Task" />
-    </form>
-
-    <ul id="todoList"></ul>
 
     <script src="script/weather.js"></script>
     <script src="script/todo.js"></script>

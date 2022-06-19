@@ -40,11 +40,13 @@ function paintTask(task){
     ul = document.querySelector("#todoList")
     
     li = document.createElement("li");    
+    li.classList.add("todo-list--items")
     li.innerText = task.task;
     li.id = task.id;
 
     button = document.createElement("button");
-    button.innerText = "x";
+    button.classList.add("todo-list--btn")
+    button.innerText = "Del";
     li.appendChild(button);
     ul.appendChild(li);
 

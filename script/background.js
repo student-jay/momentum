@@ -8,4 +8,8 @@ const selected = imgList[Math.floor(Math.random() * imgList.length)];
 bgImage = document.createElement("img");
 bgImage.src = `images/${selected}`;
 bgImage.classList = "changeOpacity";
-document.body.appendChild(bgImage);
+
+mainFrame = document.querySelector(".mainframe");
+
+// mainFrame.appendChild(bgImage);
+mainFrame.style.backgroundImage = `url(images/${selected})`;

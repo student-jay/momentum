@@ -1,0 +1,83 @@
+.main-left{
+    width:60%;
+    height:100%;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    
+    background-color: rgba(255, 99, 71, 0.3)
+    
+}
+
+.todoform{
+    padding-right: 50px;
+    width:100%;
+    height:80px;
+
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    
+}
+
+.todo-input{
+    width:500px;
+    height:80px;
+    background-color: rgba(1, 1, 1, 0);
+
+    border:none;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.7);
+    
+    color:white;
+    font-weight: 900;
+    font-size:34px;
+
+    text-align: right;
+}
+
+.todo-input::placeholder{
+    color:white;
+    font-weight: 900;
+    font-size:34px;
+
+    text-align: right;
+}
+
+.todo-list{
+    width:100%;
+    height:80%;
+
+    display: flex;
+    justify-content: flex-end;
+    
+    padding-top:50px;
+    padding-right:50px;
+
+    border-bottom:1px solid rgba(255, 255, 255, 1);
+    
+}
+
+.todo-list--items{
+    text-align: right;
+    width:auto;
+
+    font-weight: 500;
+    color:white;
+    border-bottom:1px solid rgba(255, 255, 255, 1);
+    margin-bottom:20px;
+
+    text-shadow: 2px 2px 5px gray;
+}
+.todo-list--btn{
+    margin-left:20px;
+    
+
+    background-color: rgba(255, 255, 255, 1.0);
+    border-radius: 15px;
+    border:2px solid rgba(0, 0, 0, 0.3);
+    
+}
